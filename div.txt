@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" errorPage="exception.jsp"%>
+    
+ <%@ include file="nav.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Division</title>
+</head>
+<%
+if(request.getParameter("num1") != null && request.getParameter("num2") != null){
+    int a = Integer.parseInt(request.getParameter("num1"));
+    int b = Integer.parseInt(request.getParameter("num2"));
+    int c = a /b;
+    out.println("<h1>Division is "+ c + "</h1>");
+}
+%>
+
+
+<div class="container">
+
+<form action="division.jsp" class="form">
+<input type="text" name="num1" placeholder="Enter Number1">
+<br>
+<input type="text" name="num2" placeholder="Enter Number2">
+
+<button>Calculate</button>
+</form>
+</div>
+</body>
+</html>
