@@ -1,0 +1,110 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+
+<style>
+body{
+  margin:0;
+  background:#f5f7fb;
+  padding-top:60px;          
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-family: Arial, sans-serif;
+}
+
+.container{
+  width:320px;
+  margin-top:40px;
+  text-align:center;
+  padding:35px;
+  border-radius:16px;
+  border:1px solid #d1d5db;
+  background:#ffffff;
+}
+
+
+input{
+  width:100%;
+  border:none;
+  border-bottom:2px solid #9ca3af;
+  background:transparent;
+  padding:8px 2px;
+  font-size:20px;
+  outline:none;
+  margin-top:15px;
+}
+
+input::placeholder{
+  color:#6b7280;
+  font-size:20px;
+}
+
+input:focus{
+  border-bottom:2px solid #000000;
+}
+
+button{
+  cursor:pointer;
+  color:white;
+  font-size:23px;
+  font-weight:600;
+  padding:6px 12px;
+  border:none;
+  outline:none;
+  border-radius:6px;
+  background:#6366f1;
+  margin-top:25px;
+}
+
+button:hover{
+  filter:brightness(0.95);
+}
+
+ul.navbar{
+  width:100%;
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  background:#1f2937;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+ul.navbar li a{
+  font-size:16px;
+  display:block;
+  color:#e5e7eb;
+  text-align:center;
+  padding:14px 18px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+ul.navbar li a:hover{
+  background:#374151;
+  border-radius:6px;
+}
+
+</style>
+</head>
+
+<body>
+<ul class="navbar">
+  <li><a href="add.jsp">Add</a></li>
+  <li><a href="subtract.jsp">Subtract</a></li>
+  <li><a href="multiply.jsp">Multiply</a></li>
+  <li><a href="division.jsp">Division</a></li>
+</ul>
+
+</body>
+</html>
+
